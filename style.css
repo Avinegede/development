@@ -1,0 +1,96 @@
+:root {
+    --active-color: #ffee93;
+    --link-text-color: #f1faee;
+    --menu-background-color: #1d3557;
+    --active-background-color: #132238;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+  }
+  .container {
+    width: 1280px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container .box {
+    position: relative;
+    width: 280px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.116);
+    overflow: hidden;
+    height: 490px;
+    background: #dbd6d6e1;
+    margin: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  .container .box .imgBox {
+    position: relative;
+    overflow: hidden;
+  }
+  .container .box .imgBox img {
+    max-width: 100%;
+    height: 270px;
+  
+    transition: transform 2s;
+          object-fit: cover;
+          box-sizing:border-box;	
+  }
+  .container .box:hover .imgBox img {
+    transform: scale(1.2);
+  }
+  
+  .container .box .details .content {
+    position: absolute;
+    top: 57%;
+  
+    text-align: bottom;
+    padding: 15px;
+    color: rgb(3, 3, 3);
+  }
+  .container .box .details .content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(228, 15, 15);
+  }
+  .container .box .details .content p {
+    margin: 10px 0 0;
+    padding:0;
+  }
+  .btn {
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    /* border-radius: 8px; */
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    box-sizing: border-box;
+    color: #0f1111;
+    cursor: pointer;
+    display: inline-block;  
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 13px;
+    line-height: 29px;
+    padding: 0 10px 0 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: 100px;
+    margin-left: 158px;
+  }
+  
+  .btn:hover {
+    background-color: #f7fafa;
+  }
+  
+  .btn:focus {
+    border-color: #38c401;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    outline: 0;
+  }
